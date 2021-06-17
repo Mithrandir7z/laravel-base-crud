@@ -7,8 +7,15 @@
     <title>Show</title>
 </head>
 <body>
-    <h3>{{$comic->title}}</h3>
 
-    <p>Price: {{$comic->price}}</p>
+    <a href="{{route('comics.index')}}">Torna indietro</a>
+
+
+    <h1>{{$comics->title}}</h1>
+
+    <img src="{{$comics->image}}" alt="{{$comics->title}}">
+
+    <p>Price: {{$comics->price}}</p>
+
 </body>
 </html>

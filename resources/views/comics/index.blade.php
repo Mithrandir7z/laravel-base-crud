@@ -22,5 +22,7 @@
             </li>
         </ul>
     @endforeach
+
+    <a href="{{route('comics.create')}}">Aggiungi un fumetto</a>
 </body>
 </html>
