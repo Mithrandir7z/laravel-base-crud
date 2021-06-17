@@ -19,10 +19,19 @@
 
                     {{$comic->title}}
                 </a>
+
+                <div>
+                    <a href="{{ route('comics.edit', [
+                                'comic' => $comic->id
+                            ]) }}" class="btn btn-secondary">
+                                Modifica prodotto
+                </a>
+                </div>
             </li>
         </ul>
     @endforeach
 
     <a href="{{route('comics.create')}}">Aggiungi un fumetto</a>
+
 </body>
 </html>

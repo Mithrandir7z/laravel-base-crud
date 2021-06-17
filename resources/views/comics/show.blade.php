@@ -17,5 +17,6 @@
 
     <p>Price: {{$comics->price}}</p>
 
+
 </body>
 </html>
