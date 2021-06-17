@@ -31,7 +31,7 @@
 
                 <div class="form-group">
                     <label for="name">Titolo</label>
-                    <input type="text" class="form-control" name="title" id="title" value="{{ old('name') }}">
+                    <input type="text" class="form-control" name="title" id="title" value="{{ old('title') }}">
                 </div>
 
 
@@ -42,7 +42,7 @@
 
                 <div class="form-group">
                     <label for="cooking_time">Prezzo</label>
-                    <input type="text" class="form-control" name="price" id="price" value="{{ old('cooking_time') }}">
+                    <input type="text" class="form-control" name="price" id="price" value="{{ old('price') }}">
                 </div>
 
 

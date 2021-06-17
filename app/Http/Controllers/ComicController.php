@@ -108,7 +108,7 @@ class ComicController extends Controller
         
         $form_data = $request->all();
 
-        $comic_to_modify = Pasta::find($id);
+        $comic_to_modify = Comic::find($id);
         $comic_to_modify->update($form_data);
         
         return redirect()->route('comics.show', ['comic' => $comic_to_modify->id]);
