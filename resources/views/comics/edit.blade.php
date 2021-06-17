@@ -25,9 +25,9 @@
             @endif
 
             {{-- Edit form --}}
-            <form action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="post">
+            <form action="{{ route('comics.update', ['comic' => $comics->id]) }}" method="post">
                 @csrf
-                @method('POST')
+                @method('PUT')
 
                 <div class="form-group">
                     <label for="name">Titolo</label>

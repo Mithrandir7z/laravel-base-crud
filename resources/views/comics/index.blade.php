@@ -27,6 +27,15 @@
                                 Modifica prodotto
                 </a>
                 </div>
+
+                <div>
+                    <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+
+                        <input type="submit" class="btn btn-danger" value="Cancella">
+                    </form>
+                </div>
             </li>
         </ul>
     @endforeach
